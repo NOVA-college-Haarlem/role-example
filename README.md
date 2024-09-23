@@ -1,39 +1,37 @@
-
-
 # Rollen in Laravel
 
 Dit is een eenvoudig project om te demonstreren hoe je rollen kunt gebruiken in Laravel. We zullen een eenvoudig results maken met twee rollen: teacher en student.
 
 ## Inhoudsopgave
 
-- [Rollen in Laravel](#rollen-in-laravel)
-  - [Inhoudsopgave](#inhoudsopgave)
-  - [Aan de slag](#aan-de-slag)
-    - [ResultsController](#resultscontroller)
-    - [Route](#route)
-    - [Index Methode](#index-methode)
-    - [Results View](#results-view)
-    - [Navigatie aanpassen](#navigatie-aanpassen)
-    - [Route Groep](#route-groep)
-      - [Prefix](#prefix)
-      - [Name](#name)
-    - [Verwijderen standaard Dashboard](#verwijderen-standaard-dashboard)
-    - [Route verwijderen](#route-verwijderen)
-  - [Standaard Redirect](#standaard-redirect)
-  - [Role Model](#role-model)
-  - [Registreer gebruiker](#registreer-gebruiker)
-    - [Teacher Controller](#teacher-controller)
-    - [Teacher methode](#teacher-methode)
-    - [Teacher View](#teacher-view)
-    - [Teacher Route](#teacher-route)
-  - [Layouts aanpassen](#layouts-aanpassen)
-    - [Student Layout](#student-layout)
-    - [Student View Aanpassen](#student-view-aanpassen)
-      - [Student Navigatie](#student-navigatie)
-  - [Teacher Layout](#teacher-layout)
-    - [Teacher View Aanpassen](#teacher-view-aanpassen)
-      - [Teacher Navigatie](#teacher-navigatie)
-  - [Redirect op basis van rol](#redirect-op-basis-van-rol)
+-   [Rollen in Laravel](#rollen-in-laravel)
+    -   [Inhoudsopgave](#inhoudsopgave)
+    -   [Aan de slag](#aan-de-slag)
+        -   [ResultsController](#resultscontroller)
+        -   [Route](#route)
+        -   [Index Methode](#index-methode)
+        -   [Results View](#results-view)
+        -   [Navigatie aanpassen](#navigatie-aanpassen)
+        -   [Route Groep](#route-groep)
+            -   [Prefix](#prefix)
+            -   [Name](#name)
+        -   [Verwijderen standaard Dashboard](#verwijderen-standaard-dashboard)
+        -   [Route verwijderen](#route-verwijderen)
+    -   [Standaard Redirect](#standaard-redirect)
+    -   [Role Model](#role-model)
+    -   [Registreer gebruiker](#registreer-gebruiker)
+        -   [Teacher Controller](#teacher-controller)
+        -   [Teacher methode](#teacher-methode)
+        -   [Teacher View](#teacher-view)
+        -   [Teacher Route](#teacher-route)
+    -   [Layouts aanpassen](#layouts-aanpassen)
+        -   [Student Layout](#student-layout)
+        -   [Student View Aanpassen](#student-view-aanpassen)
+            -   [Student Navigatie](#student-navigatie)
+    -   [Teacher Layout](#teacher-layout)
+        -   [Teacher View Aanpassen](#teacher-view-aanpassen)
+            -   [Teacher Navigatie](#teacher-navigatie)
+    -   [Redirect op basis van rol](#redirect-op-basis-van-rol)
 
 ## Aan de slag
 
@@ -134,6 +132,8 @@ We zetten onderstaande code erin
 ```
 
 ### Navigatie aanpassen
+
+**layout/navigation.blade.php**
 
 ````html
 <x-nav-link
